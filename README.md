@@ -55,16 +55,36 @@
 |参数名|类型|必选|说明|
 |--|:--:|:--:|:--|
 |answerId|string|是|回答帖子ID|
+|sortType|int|是|排序 1.默认 2.时间|
 |pageIndex|int|是|页数，默认1|
-|sortType|int|否|分页参数|
-|nextUrl|string|否|请求链接，从第一页获取的下一页请求链接|
+|nextUrl|string|否|请求链接，从第一页获取的下一页请求链接,当pageIndex>1时必传|
+
+
+## 4.二级评论列表
+```
+/zh/commentsReply
+```
+### 参数:
+|参数名|类型|必选|说明|
+|--|:--:|:--:|:--|
+|commentId|string|是|评论ID|
+|sortType|int|是|排序 1.默认 2.时间|
+|pageIndex|int|是|页数，默认1|
+|nextUrl|string|否|请求链接，从第一页获取的下一页请求链接,当pageIndex>1时必传|
 
 
 
-
-
-
-
+## 5.回贴answer列表第一页
+```
+/zh/answers
+```
+### 参数:
+|参数名|类型|必选|说明|
+|--|:--:|:--:|:--|
+|qid|string|是|问题ID|
+|sortType|int|是|排序 1.默认 2.时间|
+|pageIndex|int|是|页数，默认1|
+|nextUrl|string|否|请求链接，从第一页获取的下一页请求链接,当pageIndex>1时必传|
 
 
 
