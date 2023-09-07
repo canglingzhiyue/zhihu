@@ -35,7 +35,7 @@
 |kw|string|是|关键词|
 
 
-## 1.搜索结果
+## 2.搜索结果
 ```
 /zh/searchResult
 ```
@@ -45,4 +45,39 @@
 |kw|string|是|关键词|
 |pageIndex|int|是|页数，默认1|
 |nextUrl|string|否|请求链接，从第一页获取的下一页请求链接|
+
+
+## 3.评论列表
+```
+/zh/commentsOne
+```
+### 参数:
+|参数名|类型|必选|说明|
+|--|:--:|:--:|:--|
+|answerId|string|是|回答帖子ID|
+|pageIndex|int|是|页数，默认1|
+|sortType|int|否|分页参数|
+|nextUrl|string|否|请求链接，从第一页获取的下一页请求链接|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
